@@ -1,8 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using PintoresApp.Application.Queries;
-using PintoresApp.Presentation.Helpers;
 
-namespace PintoresApp.Presentation.Strategies;
+namespace PintoresApp.Presentation.Helpers;
 
 /// <summary>
 /// Helper compartido por las estrategias de Pintor para seleccionar un MovimientoArtístico.

@@ -3,7 +3,7 @@ using PintoresApp.Application.Commands;
 using PintoresApp.Application.Queries;
 using PintoresApp.Presentation.Helpers;
 
-namespace PintoresApp.Presentation.Strategies.MovimientoArtistico;
+namespace PintoresApp.Presentation.Strategies.MovimientosArtisticos;
 
 public class ModificacionMovimientoArtisticoStrategy : IMenuStrategy
 {

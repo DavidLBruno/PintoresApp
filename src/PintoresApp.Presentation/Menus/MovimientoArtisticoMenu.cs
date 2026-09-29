@@ -1,13 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using PintoresApp.Presentation.Strategies;
-using PintoresApp.Presentation.Strategies.MovimientoArtistico;
+using PintoresApp.Presentation.Strategies.MovimientosArtisticos;
 
 namespace PintoresApp.Presentation.Menus;
 
 /// <summary>
-/// Contexto del patrón Strategy para el menú de Movimientos Artísticos.
-/// Registra las estrategias disponibles y delega en MenuContext la presentación
-/// y despacho del menú.
+/// Cliente del patrón Strategy para el menú de Movimientos Artísticos.
+/// Configura las estrategias disponibles y le pasa la lista al MenuContext,
+/// que se encarga de presentar el menú y despachar la ejecución.
 /// </summary>
 public class MovimientoArtisticoMenu
 {

@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using PintoresApp.Application.Queries;
 using PintoresApp.Presentation.Helpers;
 
-namespace PintoresApp.Presentation.Strategies.Pintor;
+namespace PintoresApp.Presentation.Strategies.Pintores;
 
 public class ListadoPintorStrategy : IMenuStrategy
 {

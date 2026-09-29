@@ -1,13 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using PintoresApp.Presentation.Strategies;
-using PintoresApp.Presentation.Strategies.Pintor;
+using PintoresApp.Presentation.Strategies.Pintores;
 
 namespace PintoresApp.Presentation.Menus;
 
 /// <summary>
-/// Contexto del patrón Strategy para el menú de Pintores.
-/// Registra las estrategias disponibles y delega en MenuContext la presentación
-/// y despacho del menú.
+/// Cliente del patrón Strategy para el menú de Pintores.
+/// Configura las estrategias disponibles y le pasa la lista al MenuContext,
+/// que se encarga de presentar el menú y despachar la ejecución.
 /// </summary>
 public class PintorMenu
 {

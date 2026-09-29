@@ -4,7 +4,7 @@ using PintoresApp.Application.Queries;
 using PintoresApp.Domain.Entities;
 using PintoresApp.Presentation.Helpers;
 
-namespace PintoresApp.Presentation.Strategies.Pintor;
+namespace PintoresApp.Presentation.Strategies.Pintores;
 
 public class BajaPintorStrategy : IMenuStrategy
 {
@@ -49,7 +49,7 @@ public class BajaPintorStrategy : IMenuStrategy
         Console.WriteLine("Pintor eliminado.");
     }
 
-    private static void MostrarPintor(global::PintoresApp.Domain.Entities.Pintor p)
+    private static void MostrarPintor(Pintor p)
     {
         Console.WriteLine($"\nId: {p.Id}");
         Console.WriteLine($"Nombre: {p.Nombre} {p.Apellido}");

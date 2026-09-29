@@ -1,9 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using PintoresApp.Application.Queries;
-using PintoresApp.Domain.Entities;
 using PintoresApp.Presentation.Helpers;
 
-namespace PintoresApp.Presentation.Strategies.MovimientoArtistico;
+namespace PintoresApp.Presentation.Strategies.MovimientosArtisticos;
 
 public class DetalleMovimientoArtisticoStrategy : IMenuStrategy
 {
@@ -32,7 +31,7 @@ public class DetalleMovimientoArtisticoStrategy : IMenuStrategy
             return;
         }
 
-        MostrarMovimiento(movimiento);
+        MovimientoArtisticoDisplay.Mostrar(movimiento);
 
         Console.WriteLine("\n--- Pintores pertenecientes a este movimiento ---");
         if (movimiento.Pintores.Count == 0)
@@ -46,13 +45,5 @@ public class DetalleMovimientoArtisticoStrategy : IMenuStrategy
                 Console.WriteLine($"- {pintor.Apellido}, {pintor.Nombre} ({pintor.Nacionalidad})");
             }
         }
-    }
-
-    private static void MostrarMovimiento(global::PintoresApp.Domain.Entities.MovimientoArtistico m)
-    {
-        Console.WriteLine($"\nId: {m.Id}");
-        Console.WriteLine($"Nombre: {m.Nombre}");
-        Console.WriteLine($"País de origen: {m.PaisOrigen}");
-        Console.WriteLine($"Descripción: {m.Descripcion}");
     }
 }

@@ -3,7 +3,7 @@ using PintoresApp.Application.Commands;
 using PintoresApp.Application.Queries;
 using PintoresApp.Presentation.Helpers;
 
-namespace PintoresApp.Presentation.Strategies.Pintor;
+namespace PintoresApp.Presentation.Strategies.Pintores;
 
 public class ModificacionPintorStrategy : IMenuStrategy
 {
