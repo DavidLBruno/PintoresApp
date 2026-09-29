@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PintoresApp.Presentation",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/PintoresApp.Presentation/bin/Debug/net9.0/PintoresApp.Presentation.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/PintoresApp.Presentation",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}
